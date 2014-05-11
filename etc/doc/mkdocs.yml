@@ -1,0 +1,17 @@
+site_name: bdep-nonfree
+site_url: https://byron.github.io/bdep-nonfree
+site_description: Proprietary Depedencies of all kinds
+
+repo_url: https://github.com/Byron/bdep-nonfree
+dev_addr: 127.0.0.1:10002
+
+docs_dir: ../../src/md
+site_dir: ../../doc/mkdocs/html
+
+pages:
+- ['index.md', 'Home']
+- ['license.md', 'About', 'License']
+
+theme: yeti
+
+copyright: Copyright &copy; 2014, <a href="https://www.linkedin.com/in/sebastianthiel">Sebastian Thiel & Contributors</a>.
