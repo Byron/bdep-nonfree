@@ -1,0 +1,4 @@
+[submodule "shotgun-python-api"]
+	url = https://github.com/shotgunsoftware/python-api
+	path = lib/shotgun-python-api/latest/noarch
+	branch = refs/heads/master

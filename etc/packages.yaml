@@ -1,0 +1,12 @@
+# We require someone to set {assembly.trees.nonfree-dependencies}
+packages:
+  shotgun-python-api:
+    name: Shotgun Python API
+    description: |
+      A Python-based API for accessing Shotgun and integrating with other tools
+    url: https://github.com/shotgunsoftware/python-api
+    version: 'latest'
+    trees: '{assembly.trees.nonfree-dependencies}/lib/shotgun-python-api/{packages.shotgun-python-api.version}/noarch'
+    environment:
+      variables:
+        PYTHONPATH: '.'
