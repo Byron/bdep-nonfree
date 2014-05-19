@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Byron/bdep-nonfree.svg?branch=master)](https://travis-ci.org/Byron/bdep-nonfree)
+
 This assembly contains all closed-source or proprietary dependencies, which might be required by particular open source frameworks.
 
 It also serves as a repository for package configuration for various proprietary software to help speeding up configuration of studios. These would mix and match from the configuration provided here, as they see fit.
