@@ -1,11 +1,32 @@
+bdep-nonfree-libs: '{settings-files.bdep-nonfree-packages.dirname}/../lib'
+
 packages:
-  shotgun-python-api:
+  #######################
+  shotgun-python-api: ##
+  #####################
     name: Shotgun Python API
     description: |
       A Python-based API for accessing Shotgun and integrating with other tools
     url: https://github.com/shotgunsoftware/python-api
     version: 'latest'
-    trees: '{settings-files.bdep-nonfree-packages.dirname}/../lib/shotgun-python-api/{packages.shotgun-python-api.version}/noarch'
+    trees: '{bdep-nonfree-libs}/shotgun-python-api/{packages.shotgun-python-api.version}/noarch'
     environment:
       variables:
         PYTHONPATH: '.'
+
+  #####################
+  tk-core-package:  ##
+  ###################
+    name: tk-core repository
+    description: |
+      The actual tk-core repository clone
+    url: https://github.com/shotgunsoftware/tk-core
+    version: 'latest'
+    trees: '{bdep-nonfree-libs}/tk-core/{packages.tk-core-package.version}/noarch'
+    requires:
+      - shotgun-python-api
+    environment:
+      variables:
+        PYTHONPATH:
+          - python
+          - tests/python

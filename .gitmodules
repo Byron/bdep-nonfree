@@ -1,4 +1,8 @@
-[submodule "shotgun-python-api"]
+[submodule "shotgun-python-api/latest"]
 	url = https://github.com/shotgunsoftware/python-api
 	path = lib/shotgun-python-api/latest/noarch
 	branch = refs/heads/master
+[submodule "tk-core/latest"]
+	path = lib/tk-core/latest/noarch
+	url = https://github.com/shotgunsoftware/tk-core
+	branch = master
