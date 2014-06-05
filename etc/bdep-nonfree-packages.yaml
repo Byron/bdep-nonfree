@@ -1,4 +1,4 @@
-bdep-nonfree-libs: '{settings-files.bdep-nonfree-packages.dirname}/../lib'
+bdep-nonfree-libs: '{yaml.bdep-nonfree-packages.dirname}/../lib'
 
 packages:
   #######################
